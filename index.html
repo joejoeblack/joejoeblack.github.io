@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="个人主页" />
+    <title>个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="logo" href="#">首页</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#links">链接</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">你好，我是</p>
+        <h1 class="hero-title">你的名字</h1>
+        <p class="hero-lead">
+          这是一份放在 GitHub Pages 上的示例个人站。把文案和链接改成你自己的，就可以当作正式主页的起点。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#links">查看链接</a>
+          <a
+            class="btn btn-ghost"
+            href="https://docs.github.com/zh/pages"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GitHub Pages 文档</a
+          >
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>关于</h2>
+        <p>
+          你可以在这里写一两段自我介绍：正在做什么、关心什么技术或话题、希望别人如何联系你。
+        </p>
+        <p>
+          静态站点意味着没有服务器代码；更新内容只需改 HTML/CSS 后重新推送到仓库，几分钟内站点就会刷新。
+        </p>
+      </section>
+
+      <section id="links" class="section">
+        <h2>链接</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/" rel="noopener noreferrer" target="_blank">GitHub</a>
+            <span class="link-desc">把地址换成你的主页</span>
+          </li>
+          <li>
+            <a href="mailto:you@example.com">邮箱</a>
+            <span class="link-desc">you@example.com → 你的邮箱</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>用 GitHub Pages 托管 · <span id="year"></span></p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
